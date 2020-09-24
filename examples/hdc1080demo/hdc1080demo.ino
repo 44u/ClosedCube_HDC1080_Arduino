@@ -29,6 +29,7 @@ void setup()
 	// Default settings: 
 	//  - Heater off
 	//  - 14 bit Temperature and Humidity Measurement Resolutions
+	Wire.begin();
 	hdc1080.begin(0x40);
 
 	Serial.print("Manufacturer ID=0x");
